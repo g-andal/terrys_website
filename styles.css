@@ -157,9 +157,11 @@ footer {
 
 /* Card Styles */
 .card {
+  position: relative; /* Allows positioning of child elements */
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Inherit text color for a natural look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card effect */
+  overflow: hidden; /* Ensures content stays inside the card */
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
@@ -172,6 +174,47 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay directly on the image */
+  z-index: 2;
+  margin: 0;
+  border-radius: 8px 8px 0 0; /* Match card's top corners for consistency */
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Same height as text */
+  background: rgba(222, 222, 222, 0.25); /* Semi-transparent overlay */
+  z-index: 1; /* Below the text but above the image */
+}
 
 /* Default: Mobile-first layout */
 .free-coffee-content {
