@@ -1,0 +1,47 @@
+.bf-spread {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    display: block; /* Prevents inline spacing issues */
+}
+
+/* General styling for the section */
+section {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Default: Stack articles vertically for mobile */
+    gap: 20px; /* Space between articles */
+}
+
+/* Style for each article */
+article {
+    background: #f8f8f8; /* Light background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    flex: 1; /* Allows articles to take up equal space */
+}
+
+/* Headings */
+article h2 {
+    font-size: 1.5rem;
+}
+
+/* Paragraphs */
+article p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Media Query: Display side by side on larger screens */
+@media screen and (min-width: 750px) {
+    section {
+        flex-direction: row; /* Changes layout to side-by-side */
+        justify-content: space-between;
+    }
+
+    article {
+        flex: 1; /* Ensures both articles take up equal space */
+        text-align: left; /* Align text to the left on larger screens */
+    }
+}
