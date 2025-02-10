@@ -6,7 +6,7 @@ html, body {
   display: flex;
   flex-direction: column; /* Flex layout to align header, main, and footer */
   font-family: Arial, sans-serif;
-  background-color: #d4e0ee;
+  background-color: #f7ece0;
 }
 
 .shrikhand {

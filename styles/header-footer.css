@@ -1,5 +1,5 @@
 header {
-    background: #b0c7e3;
+    background: #e6ab90; /* c06e53 a94116 */
     color: black;
     padding: 1rem 0;
     display: flex;
@@ -78,8 +78,8 @@ header h1 {
 
 /* Footer styles */
 footer {
-    background: #333;
-    color: #fff;
+    background: #e6ab90;
+    color: black;
     text-align: center;
     padding: 1rem 0;
     margin-top: auto; /* Ensures footer sticks to the bottom when content is short */
@@ -122,8 +122,6 @@ footer a{
         display: grid;
         grid-template-columns: 1fr 1fr; /* Two columns for contact and hours */
         padding: 16px;
-        background: #333;
-        color: #fff;
       }
       /* Ensure the copyright section spans the full width */
       .footer-grid .copyright {
