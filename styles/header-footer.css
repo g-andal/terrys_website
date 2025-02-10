@@ -120,7 +120,7 @@ footer a{
       /* Footer Grid Container */
       .footer-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns for contact and hours */
+        grid-template-columns: 1fr 1fr 1fr; /* Two columns for contact and hours */
         padding: 16px;
       }
       /* Ensure the copyright section spans the full width */
