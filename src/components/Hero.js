@@ -4,7 +4,7 @@ import React from "react";
 function Hero() {
   return (
     <div class="hero-container">
-        <h1 class="hero-title">A Sip of Comfort, A Bite of Home</h1>
+        <h1 class="hero-title bodoni">A SIP OF COMFORT, A BITE OF HOME</h1>
         <p class="p1">Enjoy the warmth of freshly brewed coffee and the comfort of a homemade breakfast, all served with a touch of love.</p>
         <img src="/pancakes.jpg" alt="All American Breakfast Spread" class="hero-oval" />
         <p class="p2">Dish of the day</p>
